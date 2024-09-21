@@ -4,6 +4,25 @@
 
 This document explains the design and implementation of a Retrieval Augmented Generation (RAG) based program in Python, utilizing the **LlamaIndex** library. This notebook retrieves and answers questions based on content from an uploaded PDF file. The pipeline uses **OpenAI models** to process and embed documents and queries, and **ChromaDB** as the persistent storage for embeddings. This guide provides an in-depth explanation of the entire workflow, including the packages used, and the key functions involved.
 
+
+### How to Use
+First clone this repo using these commands - 
+```
+git clone https://github.com/HemantKArya/SimpRAGPipeline
+cd SimpRAGPipeline
+
+pip install virtualenv
+python -m venv env
+.\env\scripts\activate
+
+pip install -r requirements.txt
+pip install notebook
+
+jupyter notebook
+
+```
+And then navigate to current folder and open this 'genai_rag.ipynb'.
+
 ### Overview of the Pipeline
 
 This program reads documents (PDFs in this case), processes them to create embeddings, stores these embeddings in a vector database, and then uses these embeddings to provide accurate and relevant responses to user queries. This system is built using **LlamaIndex**, **OpenAI**, **ChromaDB**.
