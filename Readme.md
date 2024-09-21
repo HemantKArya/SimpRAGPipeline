@@ -3,6 +3,23 @@
 
 This document outlines the architecture and functionality of a Gradio-based application built with **LlamaIndex**, **OpenAI**, and **ChromaDB**. The application allows users to upload PDF or DOC files, which are then processed and indexed. Once indexed, the system can answer user queries based on the content of the uploaded documents, making it an example of a **Retrieval Augmented Generation (RAG)** system. 
 
+
+### How to Install
+First clone this repo using these commands - 
+```
+git clone https://github.com/HemantKArya/SimpRAGPipeline
+cd SimpRAGPipeline
+
+pip install virtualenv
+python -m venv env
+.\env\scripts\activate
+
+pip install -r requirements.txt
+
+python genai_rag.py
+```
+
+
 ### Overview of the Pipeline
 
 This system utilizes **LlamaIndex** to load, split, and process documents and embeds them using **OpenAI** models. The embeddings are stored in **ChromaDB**, enabling fast and efficient vector-based retrieval of relevant document sections when users ask questions. The application is wrapped in a **Gradio** interface, which provides a simple, interactive web-based UI.
