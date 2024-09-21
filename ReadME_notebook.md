@@ -11,13 +11,21 @@ First clone this repo using these commands -
 git clone https://github.com/HemantKArya/SimpRAGPipeline
 cd SimpRAGPipeline
 
+```
+```
+#remember to replace your openai api key inside notebook here at top - 
+
+openai_api = "OPEN_API_KEY"    <----
+
+```
+and then run this in cmd -
+```
 pip install virtualenv
 python -m venv env
 .\env\scripts\activate
 
 pip install -r requirements.txt
 pip install notebook
-
 jupyter notebook
 
 ```
